@@ -1,7 +1,7 @@
 # Django-starter
 <img width="550" src="https://cdn.pixabay.com/photo/2020/11/28/12/25/bread-5784572_960_720.jpg" alt="Django starter, baby!">
 
-This project provides a useful starter dough that you can use to bake a delicious Django cake! It's extremely opinionated, just like Django, and is mostly just something I'll use for my own project -- Although, you're welcome to use it if you want!
+This project provides a useful starter dough that you can use to bake a delicious Django cake! It's extremely opinionated, just like Django, and is mostly just something I'll use for my own projects -- Although, you're welcome to use it if you want!
 
 # What's included?
 
