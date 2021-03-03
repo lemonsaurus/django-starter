@@ -9,9 +9,8 @@ services:
     image: postgres:12
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
+    env_file:
+      - .env.dev
   hub:
     container_name: django-starter
     depends_on:
@@ -25,10 +24,5 @@ services:
       - ./project/:/project/
       - ./main/:/main/
       - ./img/:/img/
-    environment:
-      DEBUG: 1
-      SECRET_KEY: yellowpolkadotbikini
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_HOST: django-starter-postgres
-      POSTGRES_PORT: 5432
+    env_file:
+      - .env.dev
