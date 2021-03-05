@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9d017d61c8bf360dc74c3dd83cbe82e1c6907f2e14b8eae29be4b0f248421272"
+            "sha256": "ce6c1db32b74f3f24f9f2fb4553255c60eeada6d277b9a585cbc9027c1c6f277"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -95,7 +95,7 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==0.4.1"
-        },
+        }
     },
     "develop": {
         "flake8": {
