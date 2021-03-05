@@ -7,7 +7,8 @@ This project provides a useful starter dough that you can use to bake a deliciou
 
 - A basic `Pipfile` with some useful packages and scripts.
 - A `docker-compose` file that allows hot-seat reloading and includes a PostgreSQL database that will automatically hook up to your Django app.
-- `gunicorn` for launching your webapp with several workers and threads. Makes it more scalable, basically.
+- `gunicorn` for launching your webapp with several workers and threads. Makes it more scalable, basically. 
+- 'nginx' for serving your static files. Run 'python manage.py collectstatic --noinput' in your project's directory
 - `whitenoise` which is super convenient for serving static files straight out of your webapp. Greatly simplifies things.
 - A `.gitignore` with some common ignores in it.
 - One Django app with nothing in it.
