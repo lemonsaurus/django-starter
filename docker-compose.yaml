@@ -20,11 +20,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - 8020:8020
     volumes:
       - ./project/:/project/
       - ./main/:/main/
       - ./img/:/img/
     env_file:
       - .env.dev
+  nginx:
+    image: nginx:1.19.0-alpine
+    ports:
+      - "8020:80"
+    volumes:
+      - ./static:/code/static
+      - ./media:/code/media
+      - ./nginx:/etc/nginx/conf.d/
+    depends_on:
+      - hub
+    restart: always
