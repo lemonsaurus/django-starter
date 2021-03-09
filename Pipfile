@@ -17,4 +17,4 @@ python_version = "3.9"
 
 [scripts]
 start = "gunicorn --preload -b 0.0.0.0:8020 project.wsgi:application --threads 8 --workers 4"
-lint = ""
+lint = "pipedog"
