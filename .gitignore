@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Static and Media contents
+media/*
+!media/.gitkeep
+static/*
+!static/.gitkeep
+
 # Distribution / packaging
 .Python
 build/
