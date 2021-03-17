@@ -12,7 +12,7 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - .env.dev
-  hub:
+  django-project:
     container_name: django-starter
     depends_on:
       - postgres
