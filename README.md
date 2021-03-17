@@ -8,7 +8,7 @@ This project provides a useful starter dough that you can use to bake a deliciou
 - A basic `Pipfile` with some useful packages and scripts.
 - A `docker-compose` file that allows hot-seat reloading and includes a PostgreSQL database that will automatically hook up to your Django app.
 - `gunicorn` for launching your webapp with several workers and threads. Makes it more scalable, basically. 
-- 'nginx' for serving your static files. Run 'python manage.py collectstatic --noinput' in your project's directory
+- `nginx` for serving your static files. Run `python manage.py collectstatic --noinput` in your project's directory
 - A `.gitignore` with some common ignores in it.
 - One Django app with nothing in it.
 
@@ -32,6 +32,5 @@ POSTGRES_PORT=5432
 ```
 
 Now to start your app, just run `pipenv install` to set everything up, and then `pipenv run start` to run the app.
-
 
 
