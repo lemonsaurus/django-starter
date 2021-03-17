@@ -36,5 +36,5 @@ services:
       - ./media:/code/media
       - ./nginx:/etc/nginx/conf.d/
     depends_on:
-      - hub
+      - django-project
     restart: always
