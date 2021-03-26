@@ -1,4 +1,3 @@
-# Django-starter
 <img width="750" src="https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/django-starter.png" alt="This man is baking a Django.">
 
 This project provides a useful starter dough that you can use to bake a delicious Django cake! It's extremely opinionated, just like Django, and is mostly just something I'll use for my own projects -- Although, you're welcome to use it if you want!
