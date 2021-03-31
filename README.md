@@ -6,8 +6,8 @@ This project provides a useful starter dough that you can use to bake a deliciou
 
 - A basic `Pipfile` with some useful packages and scripts.
 - A `docker-compose` file that allows hot-seat reloading and includes a PostgreSQL database that will automatically hook up to your Django app.
-- `gunicorn` for launching your webapp with several workers and threads. Makes it more scalable, basically.
-- `whitenoise` which is super convenient for serving static files straight out of your webapp. Greatly simplifies things.
+- `gunicorn` for launching your webapp with several workers and threads. Makes it more scalable, basically. 
+- `nginx` for serving your static files. All static files must be within `static/` folder. In order to get static files in django admin section working please run `python manage.py collectstatic --noinput` in your project's directory. It will copy necessary static files from Django app installed in virtual environment.
 - A `.gitignore` with some common ignores in it.
 - One Django app with nothing in it.
 
@@ -31,6 +31,5 @@ POSTGRES_PORT=5432
 ```
 
 Now to start your app, just run `pipenv install` to set everything up, and then `pipenv run start` to run the app.
-
 
 

@@ -12,7 +12,7 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - .env.dev
-  hub:
+  django-project:
     container_name: django-starter
     depends_on:
       - postgres
@@ -20,11 +20,21 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - 8020:8020
     volumes:
       - ./project/:/project/
       - ./main/:/main/
       - ./img/:/img/
     env_file:
       - .env.dev
+  nginx:
+    container_name: django-starter-nginx
+    image: nginx:1.19.0-alpine
+    ports:
+      - "8020:80"
+    volumes:
+      - ./static:/code/static
+      - ./media:/code/media
+      - ./nginx:/etc/nginx/conf.d/
+    depends_on:
+      - django-project
+    restart: always
