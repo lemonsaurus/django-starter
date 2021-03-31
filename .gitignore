@@ -8,8 +8,8 @@ __pycache__/
 
 # Static and Media contents
 media/*
-!media/.gitkeep
 static/*
+!media/.gitkeep
 !static/.gitkeep
 
 # Distribution / packaging
